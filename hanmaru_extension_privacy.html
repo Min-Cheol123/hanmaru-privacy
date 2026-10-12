@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한마루 익스텐션 개인정보처리방침 / Privacy Policy</title>
+<style>
+  body { margin: 0; background: #f5f7fa; color: #1f2933; font-family: "맑은 고딕", "Malgun Gothic", -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+  main { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
+  article { background: #fff; border: 1px solid #d5dce5; border-radius: 8px; padding: 32px 36px; margin-bottom: 28px; }
+  h1 { font-size: 26px; color: #0b2e59; margin: 0 0 4px; }
+  h2 { font-size: 18px; color: #0b2e59; margin: 32px 0 10px; padding-top: 12px; border-top: 1px solid #e6ebf1; }
+  h3 { font-size: 15px; margin: 18px 0 6px; }
+  .meta { color: #5f6b7a; font-size: 14px; margin-bottom: 20px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 8px 0; }
+  th, td { border: 1px solid #d5dce5; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f0f4f9; }
+  .wrap { overflow-x: auto; }
+  ul { padding-left: 22px; }
+  code { background: #f0f4f9; padding: 1px 5px; border-radius: 3px; font-size: 13px; }
+  nav a { margin-right: 12px; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#ko">한국어</a><a href="#en">English</a></nav>
+
+<article id="ko">
+<h1>한마루 익스텐션 개인정보처리방침</h1>
+<p class="meta">시행일: 2026년 10월 12일 · 적용 대상: Chrome 확장 프로그램 "한마루 익스텐션"(ID: jlpofmdhaepcipgamkpidolfhlpbabhm)</p>
+
+<p>한마루 익스텐션(이하 "확장 프로그램")은 HL그룹 사내 업무 포털 "한마루"(ep.hlcompany.com)의 일일보고·헬프데스크 업무를 돕는 도구입니다. 이 방침은 확장 프로그램이 어떤 데이터를 수집·처리·보관·공유하는지 설명합니다.</p>
+
+<h2>1. 수집·처리하는 데이터</h2>
+<div class="wrap"><table>
+<tr><th>데이터</th><th>출처</th><th>용도</th></tr>
+<tr><td>사용자 이름(한마루 화면에 표시되는 이름)</td><td>한마루 페이지</td><td>나의 업무 목록에서 본인 담당 건을 구분</td></tr>
+<tr><td>헬프데스크 업무 정보(요청번호, 제목, 처리자, 상태, 요청·처리 내용, 첨부 이미지)</td><td>한마루 페이지</td><td>할 일 목록 표시, 일일보고 작성 보조, AI 기능(선택), 지식베이스(선택)</td></tr>
+<tr><td>일일보고 목록·작성 내용</td><td>한마루 페이지</td><td>미작성일 확인, 일일보고 입력 보조, 업무 보고서 생성(선택)</td></tr>
+<tr><td>사용자가 직접 입력한 할 일, 설정값, 번역할 문장</td><td>사용자 입력</td><td>확장 프로그램 기능 제공</td></tr>
+<tr><td>Google Gemini API 키, 사내 지식베이스 서버 API 키·주소</td><td>사용자 입력</td><td>해당 서비스 호출 시 인증</td></tr>
+<tr><td>지식베이스 항목(시스템, 모듈, 제목, 증상, 해결 방법, 태그, 관련 요청번호, 임베딩 벡터)</td><td>헬프데스크 내용으로 생성 또는 사내 서버에서 내려받음</td><td>유사 문의 검색, 처리 방법 참고</td></tr>
+</table></div>
+<p>확장 프로그램은 한마루 로그인 아이디·비밀번호를 읽거나 저장하지 않습니다. 사용자가 이미 로그인한 브라우저 세션으로 한마루 페이지를 조회합니다. 방문 기록, 위치 정보, 금융 정보, 건강 정보는 수집하지 않으며, 광고나 사용 통계(분석) 목적의 추적도 하지 않습니다.</p>
+
+<h2>2. 처리 방법</h2>
+<ul>
+<li>대부분의 처리는 사용자의 브라우저 안에서 이루어집니다.</li>
+<li><b>AI 기능</b>(번역, 지식베이스 초안·조언, 업무 보고서 생성 등)은 사용자가 설정에서 본인의 Google Gemini API 키를 등록한 경우에만 동작합니다. 이때 해당 기능에 필요한 텍스트와 이미지(헬프데스크 내용, 첨부 이미지, 번역할 문장, 업무 보고 데이터)가 Google Gemini API로 전송됩니다.</li>
+<li><b>지식베이스 서버 동기화</b>는 사용자가 사내 지식베이스 서버 API 키를 등록한 경우에만 동작합니다. 등록되어 있으면 30분마다 서버의 변경 여부를 확인해 내려받고, 3일마다 로컬 지식베이스 항목을 서버에 업로드하며, 사용자가 직접 업로드·다운로드할 수도 있습니다.</li>
+<li><b>공휴일 확인</b>을 위해 공휴일 API(date.nager.at)에 연도와 국가 코드(KR)만 전송합니다. 개인 정보는 포함되지 않습니다.</li>
+</ul>
+
+<h2>3. 보관</h2>
+<ul>
+<li>모든 데이터는 사용자 PC의 브라우저 저장소(<code>chrome.storage.local</code>)에 저장되며, 개발자가 운영하는 서버로 전송되지 않습니다.</li>
+<li>보관 기간: 사용자가 확장 프로그램 화면에서 삭제하거나 확장 프로그램을 제거할 때까지 보관됩니다. 확장 프로그램을 제거하면 저장된 데이터는 모두 삭제됩니다. 로컬 지식베이스는 최대 500건까지만 보관합니다.</li>
+<li>사내 지식베이스 서버에 업로드된 항목은 해당 서버를 운영하는 회사(HL그룹)의 정책에 따라 보관됩니다.</li>
+</ul>
+
+<h2>4. 공유(제3자 제공)</h2>
+<p>데이터를 판매하지 않으며, 아래 경우 외에는 제3자에게 제공하지 않습니다.</p>
+<div class="wrap"><table>
+<tr><th>받는 곳</th><th>제공되는 데이터</th><th>조건</th></tr>
+<tr><td>Google (Gemini API, generativelanguage.googleapis.com)</td><td>AI 기능에 사용되는 텍스트·이미지, 사용자의 Gemini API 키</td><td>사용자가 Gemini API 키를 등록하고 AI 기능을 사용할 때</td></tr>
+<tr><td>HL그룹 사내 지식베이스 서버(kbr.msa.mando.com)</td><td>지식베이스 항목, 지식베이스 서버 API 키</td><td>사용자가 지식베이스 서버 API 키를 등록했을 때</td></tr>
+<tr><td>Nager.Date 공휴일 API(date.nager.at)</td><td>연도, 국가 코드</td><td>일일보고 미작성일 확인 시</td></tr>
+<tr><td>Google Fonts(fonts.googleapis.com)</td><td>글꼴 요청(IP 주소 등 일반 접속 정보)</td><td>관리 화면을 열 때</td></tr>
+</table></div>
+<p>Google Gemini API로 전송된 데이터에는 Google의 Gemini API 이용약관과 개인정보처리방침이 적용됩니다. 무료 등급 API 키를 사용하는 경우 Google이 입력 내용을 서비스 개선에 사용할 수 있으므로, 민감한 내용이 포함된 경우 AI 기능 사용에 유의하시기 바랍니다.</p>
+
+<h2>5. 사용자의 선택과 삭제</h2>
+<ul>
+<li>AI 기능과 지식베이스 서버 동기화는 선택 사항입니다. API 키를 등록하지 않거나 삭제하면 외부 전송이 이루어지지 않습니다.</li>
+<li>할 일, 지식베이스 항목, API 키, 설정은 확장 프로그램 관리 화면에서 언제든 수정·삭제할 수 있습니다.</li>
+<li>확장 프로그램을 제거하면 브라우저에 저장된 모든 데이터가 삭제됩니다.</li>
+</ul>
+
+<h2>6. 보안</h2>
+<p>API 키와 데이터는 사용자 브라우저에만 저장되며, 개발자가 접근할 수 없습니다. 외부 전송은 위 4항에 적힌 서비스로만 이루어집니다.</p>
+
+<h2>7. 정책 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 변경 내용과 시행일을 게시합니다.</p>
+
+<h2>8. 문의</h2>
+<p>개인정보 처리에 관한 문의: leemin940129@gmail.com</p>
+</article>
+
+<article id="en">
+<h1>Hanmaru Extension Privacy Policy</h1>
+<p class="meta">Effective date: October 12, 2026 · Applies to the Chrome extension "한마루 익스텐션 (Hanmaru Extension)" (ID: jlpofmdhaepcipgamkpidolfhlpbabhm)</p>
+
+<p>Hanmaru Extension (the "Extension") helps employees with daily reports and help-desk tasks on "Hanmaru" (ep.hlcompany.com), the internal work portal of HL Group. This policy explains what data the Extension collects, how it is processed, where it is stored, and with whom it is shared.</p>
+
+<h2>1. Data collected and processed</h2>
+<div class="wrap"><table>
+<tr><th>Data</th><th>Source</th><th>Purpose</th></tr>
+<tr><td>User's display name shown on Hanmaru</td><td>Hanmaru pages</td><td>Identify tasks assigned to the user</td></tr>
+<tr><td>Help-desk task information (request number, title, assignee, status, request/resolution text, attached images)</td><td>Hanmaru pages</td><td>To-do list, daily report assistance, optional AI features, optional knowledge base</td></tr>
+<tr><td>Daily report list and content</td><td>Hanmaru pages</td><td>Find missing report days, assist report entry, optional work report generation</td></tr>
+<tr><td>To-do items, settings, and text to translate entered by the user</td><td>User input</td><td>Provide Extension features</td></tr>
+<tr><td>Google Gemini API key; internal knowledge base server API key and URL</td><td>User input</td><td>Authenticate requests to those services</td></tr>
+<tr><td>Knowledge base entries (system, module, title, symptom, resolution, tags, related request numbers, embedding vectors)</td><td>Generated from help-desk content or downloaded from the internal server</td><td>Search similar issues and reference resolutions</td></tr>
+</table></div>
+<p>The Extension does not read or store Hanmaru login IDs or passwords; it uses the browser session the user is already signed in with. It does not collect browsing history, location, financial, or health information, and it does not track users for advertising or analytics.</p>
+
+<h2>2. How data is processed</h2>
+<ul>
+<li>Most processing happens locally in the user's browser.</li>
+<li><b>AI features</b> (translation, knowledge base drafts/advice, work report generation, etc.) run only if the user registers their own Google Gemini API key. When used, the text and images required for that feature (help-desk content, attached images, text to translate, work report data) are sent to the Google Gemini API.</li>
+<li><b>Knowledge base server sync</b> runs only if the user registers an internal knowledge base server API key. When registered, the Extension checks the server for updates every 30 minutes, uploads local knowledge base entries every 3 days, and also syncs when the user triggers it manually.</li>
+<li><b>Public holiday lookup</b> sends only the year and country code (KR) to the holiday API (date.nager.at). No personal data is included.</li>
+</ul>
+
+<h2>3. Storage and retention</h2>
+<ul>
+<li>All data is stored in the browser's local extension storage (<code>chrome.storage.local</code>) on the user's PC. Nothing is sent to servers operated by the developer.</li>
+<li>Data is kept until the user deletes it in the Extension or uninstalls the Extension; uninstalling removes all stored data. The local knowledge base keeps at most 500 entries.</li>
+<li>Entries uploaded to the internal knowledge base server are retained according to the policies of the company that operates it (HL Group).</li>
+</ul>
+
+<h2>4. Sharing with third parties</h2>
+<p>We do not sell user data. Data is shared only as follows:</p>
+<div class="wrap"><table>
+<tr><th>Recipient</th><th>Data shared</th><th>When</th></tr>
+<tr><td>Google (Gemini API, generativelanguage.googleapis.com)</td><td>Text and images used by AI features; the user's Gemini API key</td><td>When the user registers a Gemini API key and uses an AI feature</td></tr>
+<tr><td>HL Group internal knowledge base server (kbr.msa.mando.com)</td><td>Knowledge base entries; knowledge base server API key</td><td>When the user registers a knowledge base server API key</td></tr>
+<tr><td>Nager.Date holiday API (date.nager.at)</td><td>Year and country code</td><td>When checking missing daily report days</td></tr>
+<tr><td>Google Fonts (fonts.googleapis.com)</td><td>Font requests (standard connection data such as IP address)</td><td>When the management page is opened</td></tr>
+</table></div>
+<p>Data sent to the Google Gemini API is subject to Google's Gemini API Terms of Service and Privacy Policy. If a free-tier API key is used, Google may use the submitted content to improve its services; please use AI features with care when content is sensitive.</p>
+
+<h2>5. User choices and deletion</h2>
+<ul>
+<li>AI features and knowledge base server sync are optional. If no API key is registered (or it is removed), no data is sent to those services.</li>
+<li>To-do items, knowledge base entries, API keys, and settings can be edited or deleted at any time in the Extension's management page.</li>
+<li>Uninstalling the Extension deletes all data stored in the browser.</li>
+</ul>
+
+<h2>6. Security</h2>
+<p>API keys and data are stored only in the user's browser and are not accessible to the developer. Data is transmitted only to the services listed in Section 4.</p>
+
+<h2>7. Changes to this policy</h2>
+<p>If this policy changes, the updated version and its effective date will be posted on this page.</p>
+
+<h2>8. Contact</h2>
+<p>Privacy inquiries: leemin940129@gmail.com</p>
+</article>
+</main>
+</body>
+</html>
